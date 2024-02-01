@@ -1,2 +1,19 @@
-# **/.terraform/*
-.terraform
+# Ignore les fichiers de configuration sensibles
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.tfplan
+
+# Ignore les répertoires et fichiers générés
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfvars
+
+# Ignore les fichiers de logs et de sauvegarde
+*.log
+*.bak
+
+# Ignore les fichiers spécifiques à votre environnement de développement
+.vscode/
+.DS_Store

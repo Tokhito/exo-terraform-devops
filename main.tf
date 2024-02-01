@@ -13,7 +13,7 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-resource "aws_instance" "hetic_group_7_instance" {
+resource "aws_instance" "instance_hetic_group_7" {
   ami           = "ami-0277155c3f0ab2930"
   instance_type = "t2.micro"
 
@@ -22,7 +22,7 @@ resource "aws_instance" "hetic_group_7_instance" {
   }
 }
 
-resource "aws_s3_bucket" "hetic_group_7_bucket" {
+resource "aws_s3_bucket" "bucket_hetic_group_7" {
   bucket = "mt4"
 
   tags = {
